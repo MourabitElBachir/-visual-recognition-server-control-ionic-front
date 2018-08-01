@@ -1,8 +1,24 @@
-These are Cordova resources. You can replace icon.png and splash.png and run
-`ionic cordova resources` to generate custom icons and splash screens for your
-app. See `ionic cordova resources --help` for details.
+Starting our Ionic Images App
 
-Cordova reference documentation:
 
-- Icons: https://cordova.apache.org/docs/en/latest/config_ref/images.html
-- Splash Screens: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/
+    ionic start visual-recognition-ionic
+    cd visual-recognition-ionic
+    npm install --save @ionic-native/camera @ionic-native/file @ionic-native/file-path @ionic-native/transfer
+    ionic plugin add cordova-plugin-camera --save
+    ionic plugin add cordova-plugin-camera --save
+    ionic plugin add cordova-plugin-camera --save
+    ionic plugin add cordova-plugin-file --save
+    ionic plugin add cordova-plugin-file-transfer --save
+    ionic plugin add cordova-plugin-filepath --save`
+
+
+In detail these plugins are used for:
+
+- **cordova-plugin-camera:** `Needed for using the Ionic native camera`
+- **cordova-plugin-file:** `Needed for copying the result of the camera into our filesystem`
+- **cordova-plugin-file-transfer:** `Needed for uploading files`
+- **cordova-plugin-filepath:** `Utility for fixing some Android paths to files`
+
+
+
+
