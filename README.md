@@ -20,5 +20,5 @@ In detail these plugins are used for:
 - **cordova-plugin-filepath:** `Utility for fixing some Android paths to files`
 
 
-
+You have to modify the value of the variable `serverURL` In the file : home.ts [line : 21]
 
