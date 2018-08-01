@@ -1,5 +1,7 @@
-Starting our Ionic Images App
+1- Configure your 
 
+
+2- Starting our Ionic Images App
 
     ionic start visual-recognition-ionic
     cd visual-recognition-ionic
@@ -11,7 +13,6 @@ Starting our Ionic Images App
     ionic plugin add cordova-plugin-file-transfer --save
     ionic plugin add cordova-plugin-filepath --save`
 
-
 In detail these plugins are used for:
 
 - **cordova-plugin-camera:** `Needed for using the Ionic native camera`
@@ -19,6 +20,8 @@ In detail these plugins are used for:
 - **cordova-plugin-file-transfer:** `Needed for uploading files`
 - **cordova-plugin-filepath:** `Utility for fixing some Android paths to files`
 
+3- Connect IONIC to the Python server WEB Services
 
-You have to modify the value of the variable `serverURL` In the file : home.ts [line : 21]
+Modify the value of the variable `serverURL` by your Python server IP address In the file : home.ts `[line : 21]`
 
+    readonly serverURL : string = "http://10.33.171.5:5005";

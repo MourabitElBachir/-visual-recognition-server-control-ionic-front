@@ -18,7 +18,7 @@ export class HomePage {
   lastImage: string = null;
   loading: Loading;
   disableUpload = true;
-  private serverURL : string = "http://10.33.171.5:5005/";
+  readonly serverURL : string = "http://10.33.171.5:5005/";
 
   constructor(public navCtrl: NavController, private camera: Camera, private transfer: Transfer, private file: File,
               private filePath: FilePath, public actionSheetCtrl: ActionSheetController,
@@ -122,7 +122,7 @@ export class HomePage {
     fileTransfer.download(url, cordova.file.dataDirectory + outputImgName).then((entry) => {
 
       //delete request here for: upload, output
-      this.http.get(this.serverURL + 'api/removeFiles/'+this.lastImage, {}, {})
+      this.http.get(this.serverURL + '/api/removeFiles/'+this.lastImage, {}, {})
         .then(data => {
           console.log(data.status);
           console.log(data.data); // data received by server
@@ -158,7 +158,7 @@ export class HomePage {
 // Upload an image to server code
   public uploadImage() {
     // Destination URL
-    var url = this.serverURL + "api/upload_image";
+    var url = this.serverURL + "/api/upload_image";
 
     // File for Upload
     var targetPath = this.pathForImage(this.lastImage);
@@ -185,7 +185,7 @@ export class HomePage {
     // Use the FileTransfer to upload the image
     fileTransfer.upload(targetPath, url, options).then(data => {
 
-      let filePathImg = this.serverURL + 'api/uploads/'+filename;
+      let filePathImg = this.serverURL + '/api/uploads/'+filename;
       this.downloadOutputImage(filePathImg)
 
       this.loading.dismissAll()
