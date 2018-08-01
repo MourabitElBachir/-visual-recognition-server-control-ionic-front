@@ -1,5 +1,7 @@
-1- Configure your 
+1- Configure your TensorFlow Object Detection API + Start the Python WEB SERVER
 
+  Repository link for the Python server detection API :
+  
 
 2- Starting our Ionic Images App
 
