@@ -1,6 +1,8 @@
 # Tensorflow Object Detection API - Client Side with IONIC Cordova
 
 
+## Configuration
+
 1- Configure your TensorFlow Object Detection API + Start the Python WEB SERVER
 
   Repository link for the Python server detection API : [Repository of Python Tensorflow Server](https://gitlab-lyon.sqli.com/ebmourabit/visual-recognition-server-control-ionic-back)
@@ -30,3 +32,11 @@ In detail these plugins are used for:
 Modify the value of the variable `serverURL` by your Python server IP address In the file : home.ts `[line : 21]`
 
     readonly serverURL : string = "http://10.33.171.5:5005";
+    
+3- Build and Run your Application (Use real Device to use camera for detection)
+
+
+## Results
+
+<img src="screenshot1.png" /> <img src="screenshot2.png" /> <img src="screenshot3.png" />
+
