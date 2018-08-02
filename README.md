@@ -38,5 +38,5 @@ Modify the value of the variable `serverURL` by your Python server IP address In
 
 ## Results
 
-<img src="screenshots/screenshot1.png" /> <img src="screenshots/screenshot2.png" /> <img src="screenshots/screenshot3.png" />
+<img src="screenshots/screenshot1.png" width="30%"/> <img src="screenshots/screenshot2.png" width="30%"/> <img src="screenshots/screenshot3.png" width="30%"/>
 
