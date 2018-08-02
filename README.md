@@ -1,4 +1,4 @@
-**Tensorflow Object Detection API - Client Side with IONIC Cordova**
+# Tensorflow Object Detection API - Client Side with IONIC Cordova
 
 
 1- Configure your TensorFlow Object Detection API + Start the Python WEB SERVER
