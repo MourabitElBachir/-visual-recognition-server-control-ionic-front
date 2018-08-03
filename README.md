@@ -7,7 +7,6 @@
 
   Repository link for the Python server detection API : [Repository of Python Tensorflow Server](https://gitlab-lyon.sqli.com/ebmourabit/visual-recognition-server-control-ionic-back)
   
-
 2- Starting our Ionic Images App
 
     ionic start visual-recognition-ionic
